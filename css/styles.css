@@ -862,9 +862,21 @@ img {
   margin-top: 20px;
 }
 
-/* .checkbox-group checkbox {
-  margin-right: 7px;
-} */
+.checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+}
+
+.checkbox-icon {
+  padding: auto;
+}
+
+.checkbox:checked + .checkbox-icon {
+  background-color: var(--accent-color);
+  fill: var(--secondary-text-color);
+}
 
 .checkbox-group label {
   font-weight: normal;
